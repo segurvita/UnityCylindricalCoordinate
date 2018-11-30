@@ -65,7 +65,7 @@
             #pragma fragment frag
 
             // vertex shader
-			v2f vert (appdata v) {
+            v2f vert (appdata v) {
                 v2f o;
 
                 // convert rectangular to cylindrical
@@ -84,7 +84,7 @@
             }
 
             // fragment shader
-			fixed4 frag (v2f i): SV_Target {
+            fixed4 frag (v2f i): SV_Target {
                 return tex2D(_MainTex, i.uv);
             }
 
